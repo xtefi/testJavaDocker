@@ -1,0 +1,10 @@
+package com.dev2qa.example.spring;
+
+public class HelloWorld 
+{
+
+	public void main(String[] args) 
+	{		    
+		System.out.println("Hello Pichu");
+	}
+}
