@@ -6,7 +6,7 @@ pipeline{
     
     stage("build"){ 
       steps{
-        echo 'testing build'
+        mvn clean install
       }
     }
     
@@ -22,4 +22,15 @@ pipeline{
       }     
     }
   }
+  
+  post {
+    always{
+      
+    }
+    success{
+      
+    }
+    failure{
+      
+    }
 }
