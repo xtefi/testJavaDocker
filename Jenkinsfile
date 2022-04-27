@@ -10,6 +10,7 @@ pipeline{
     stage("build"){ 
       steps{
         echo 'bild test runing'
+        cd 'demo'
         sh 'mvn clean install'
       }
     }
