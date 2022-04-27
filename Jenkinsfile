@@ -1,12 +1,16 @@
 pipeline{
   
   agent any
+  tools{
+    maven "maven-test-3.6"
+  }
   
   stages{
     
     stage("build"){ 
       steps{
-        mvn clean install
+        echo 'bild test runing'
+        sh 'mvn clean install'
       }
     }
     
